@@ -12,6 +12,8 @@ jobs:
   publish:
     name: Publish
     needs: lint
+    permissions:
+      packages: write
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
